@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import Search from '@material-ui/icons/Search';
 
-import * as actions from '../actions';
 
 const styles = theme => ({
   titleImage: {
@@ -37,8 +36,6 @@ const styles = theme => ({
 
 class Home extends React.Component {
     render() {
-    // redux関連
-    const { actions } = this.props;
     // Material-ui関連
     const { classes } = this.props;
         return (
@@ -48,7 +45,6 @@ class Home extends React.Component {
           variant="contained"
           color="primary"
           className={classes.button}
-          onClick={() => actions.getAnimes(this.state.year, this.state.cour)}
           >Start
           </Button>
         </div>
