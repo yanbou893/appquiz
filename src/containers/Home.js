@@ -28,6 +28,7 @@ class Home extends React.Component {
         <div>
           <p>Quiz</p>
           <BottomNavigation
+          showLabels
           children={this.buttons}
           />
         </div>
