@@ -18,6 +18,7 @@ class App extends Component {
     return (
       <Switch>
       <Route exact path="/" component={Home} />
+      <Route component={NotFound}/>
       </Switch>
       );
   }
